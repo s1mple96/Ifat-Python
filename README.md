@@ -25,7 +25,7 @@
 2.Docker下安装jenkins  
   &nbsp;&nbsp;2.1.docker pull jenkins/jenkins:lts  
   &nbsp;&nbsp;2.2.查看下载完成的镜像: docker images
-  &nbsp;&nbsp;2.3.启动jenkins: docker run -d -p 80:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /etc/localtime:/etc/localtome --name jenkins docker.io/jenkins/jenkins:lts  
+  &nbsp;&nbsp;2.3.启动jenkins: docker run -d -p 80:8080 -p 50000:50000 -v jenkins:/var/jenkins_home -v /etc/localtime:/etc/localtome --name jenkins docker.io/jenkins/jenkins:lts 
   &nbsp;&nbsp;2.4.启动浏览器:浏览 http:localhost并等到Unlock Jenkins 页面出现
   &nbsp;&nbsp;2.5.获取初始化密码: docker exec jenkins tail /var/jenkins_home/secrets/initialAdminPassword
   &nbsp;&nbsp;2.6.继续完成后面步骤向导设置
@@ -34,5 +34,11 @@
   &nbsp;&nbsp;3.2.查看已经开放的端口:firewal-cmd --list-ports  
   &nbsp;&nbsp;3.3.开启端口:firewall-cmd --zone=public --add-port=8080/tcp --permanent  
   &nbsp;&nbsp;3.4.重启防火墙: firewall-cmd --reload
-
+4.配置Jenkins项目
+  &nbsp;&nbsp;4.1.新建任务
+  &nbsp;&nbsp;4.2.源码管理配置:勾选git,输入Repository URL -> 点击Add ,点击jenkins->输入github用户名和密码,点击Add
+  &nbsp;&nbsp;4.3.构建触发器配置:狗血Poll SCM,日程表中填写:*/1 * * * *
+  &nbsp;&nbsp;4.4.我选择了Windows执行命令,因为我开启了 代理.编写代码:pip install -r requirements.txt python run.py
+  &nbsp;&nbsp;4.5.构建后操作-报告配置:点击增加构建后步骤,选择Allure Report->在path中输入allure报告的xml所在的目录名称report/result
+  &nbsp;&nbsp;4.6.点击构建执行
 
