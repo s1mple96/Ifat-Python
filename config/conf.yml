@@ -1,0 +1,18 @@
+
+
+BASE:
+ #log等级
+ log_level: "debug"
+ #扩展名
+ log_extension: ".log"
+ test:
+  url: "http://activity.yhdfa.com"
+  case_file: "testdata.xlsx"
+  case_sheet: "智能销售平台"
+
+
+email:
+ smtpserver: "smtp.qq.com"
+ username: "903255458@qq.com"
+ password: "AFSPQCHBTXMZLREF"
+ receiver: "903255458@qq.com"

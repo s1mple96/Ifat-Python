@@ -1,0 +1,11 @@
+
+
+#编写相关基本信息
+db_1:
+  db_host: "127.0.0.1"
+  db_user: "root"
+  db_password: "root"
+  db_name: "test"
+  db_charset: "utf8"
+  db_port: "3306"
+
