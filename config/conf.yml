@@ -6,9 +6,9 @@ BASE:
  #扩展名
  log_extension: ".log"
  test:
-  url: "http://activity.yhdfa.com"
+  url: ""
   case_file: "testdata.xlsx"
-  case_sheet: "智能销售平台"
+  case_sheet: "九宫格抽奖系统"
 
 
 email:

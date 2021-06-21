@@ -8,4 +8,3 @@ db_1:
   db_name: "test"
   db_charset: "utf8"
   db_port: "3306"
-
