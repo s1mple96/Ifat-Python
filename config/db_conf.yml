@@ -1,10 +1,24 @@
-
-
 #编写相关基本信息
 db_1:
-  db_host: "127.0.0.1"
-  db_user: "root"
-  db_password: "root"
-  db_name: "test"
+  db_host: "211.103.136.242"
+  db_user: "test"
+  db_password: "test123456"
+  db_name: "meiduo"
   db_charset: "utf8"
-  db_port: "3306"
+  db_port: "7090"
+
+db_2:
+  db_host: "111211.103.136.242"
+  db_user: "test"
+  db_password: "test123456"
+  db_name: "meiduo"
+  db_charset: "utf8"
+  db_port: "7090"
+
+db_3:
+  db_host: "333211.103.136.242"
+  db_user: "test"
+  db_password: "test123456"
+  db_name: "meiduo"
+  db_charset: "utf8"
+  db_port: "7090"
