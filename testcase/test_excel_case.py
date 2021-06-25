@@ -200,11 +200,11 @@ class TestExcel:
         headers_para, cookies_para = Base.params_find(headers, cookies)
         # 有关联，执行前置用例，获取结果
         if len(headers_para):
-            headers_data = pre_res["body"][headers_para[0]]
+            headers_data = pre_res["body"]["data"][headers_para[0]]
             # 结果替换
             headers = Base.res_sub(headers, headers_data)
         if len(cookies_para):
-            cookies_data = pre_res["body"][cookies_para[0]]
+            cookies_data = pre_res["body"]["data"][cookies_para[0]]
             # 结果替换
             cookies = Base.res_sub(headers, cookies_data)
         return headers, cookies

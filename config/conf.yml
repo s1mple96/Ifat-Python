@@ -4,13 +4,13 @@ BASE:
   #扩展名
   log_extension: ".log"
   test:
-    url: "http://211.103.136.242:8064"
+    url: ""
     case_file: "testdata.xlsx"
-    case_sheet: "美多商城接口测试"
+    case_sheet: "九宫格抽奖系统"
 
 
 email:
-  smtpserver: "smtp.itcast.com"
-  username: "wangxu@itcast.com"
+  smtpserver: "smtp.qq.com"
+  username: "903255458@qq.com"
   password: "FDSArewq1"
-  receiver: "wangxu@itcast.com"
+  receiver: "903255458@qq.com"
